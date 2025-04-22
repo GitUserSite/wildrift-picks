@@ -34,13 +34,13 @@ export default function HomePage() {
   }, [search, lane, champions])
 
   return (
-    <div className="p-4 max-w-5xl mx-auto">
+    <div className="p-4 min-h-screen bg-gradient-to-b from-gray-900 to-gray-700 text-white max-w-5xl mx-auto">
       <div className="flex gap-2 flex-wrap mb-4">
         {["all", "top", "jungle", "mid", "adc", "support"].map((pos) => (
           <button
             key={pos}
             onClick={() => setLane(pos)}
-            className={`px-3 py-1 rounded border ${lane === pos ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
+            className={`px-3 py-1 rounded-full transition shadow ${lane === pos ? 'bg-blue-500 text-white font-semibold shadow-lg' : 'bg-gray-300 text-black hover:bg-gray-400'}`}
           >
             {pos.toUpperCase()}
           </button>
@@ -57,7 +57,7 @@ export default function HomePage() {
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {filtered.map((champ) => (
-          <div key={champ.id} className="text-center border rounded p-2 bg-white shadow">
+          <div key={champ.id} className="text-center rounded-xl p-4 bg-white shadow-lg hover:scale-105 transition duration-300">
             <img
               src={champ.image_url}
               alt={champ.name}
