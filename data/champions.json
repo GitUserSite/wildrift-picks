@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Ahri",
+    "riot_id": "Ahri",
+    "lanes": [
+      "mid"
+    ],
+    "released": true
+  },
+  {
+    "name": "Zilean",
+    "riot_id": "Zilean",
+    "lanes": [
+      "support",
+      "mid"
+    ],
+    "released": false
+  },
+  {
+    "name": "Nocturne",
+    "riot_id": "Nocturne",
+    "lanes": [
+      "jungle"
+    ],
+    "released": false
+  },
+  {
+    "name": "Aatrox",
+    "riot_id": "Aatrox",
+    "lanes": [
+      "top"
+    ],
+    "released": true
+  },
+  {
+    "name": "Fiddlesticks",
+    "riot_id": "Fiddlesticks",
+    "lanes": [
+      "jungle"
+    ],
+    "released": true
+  },
+  {
+    "name": "Syndra",
+    "riot_id": "Syndra",
+    "lanes": [
+      "mid"
+    ],
+    "released": true
+  },
+  {
+    "name": "Aurelion Sol",
+    "riot_id": "AurelionSol",
+    "lanes": [
+      "mid"
+    ],
+    "released": true
+  },
+  {
+    "name": "Kindred",
+    "riot_id": "Kindred",
+    "lanes": [
+      "jungle"
+    ],
+    "released": false
+  },
+  {
+    "name": "Skarner",
+    "riot_id": "Skarner",
+    "lanes": [
+      "jungle"
+    ],
+    "released": false
+  },
+  {
+    "name": "Ivern",
+    "riot_id": "Ivern",
+    "lanes": [
+      "jungle"
+    ],
+    "released": false
+  }
+]
