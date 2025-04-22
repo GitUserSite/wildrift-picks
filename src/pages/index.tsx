@@ -1,7 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Input } from '@/components/ui/input'
-import { Card, CardContent } from '@/components/ui/card'
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { createClient } from '@supabase/supabase-js'
 
 const supabaseUrl = 'https://zljuvpcbomqlkmsyqqnw.supabase.co'
@@ -38,32 +35,36 @@ export default function HomePage() {
 
   return (
     <div className="p-4 max-w-5xl mx-auto">
-      <Tabs value={lane} onValueChange={setLane} className="mb-4">
-        <TabsList className="flex flex-wrap gap-2">
-          {['all', 'top', 'jungle', 'mid', 'adc', 'support'].map(pos => (
-            <TabsTrigger key={pos} value={pos}>
-              {pos.toUpperCase()}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-      </Tabs>
+      <div className="flex gap-2 flex-wrap mb-4">
+        {["all", "top", "jungle", "mid", "adc", "support"].map((pos) => (
+          <button
+            key={pos}
+            onClick={() => setLane(pos)}
+            className={`px-3 py-1 rounded border ${lane === pos ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
+          >
+            {pos.toUpperCase()}
+          </button>
+        ))}
+      </div>
 
-      <Input
+      <input
         type="text"
         placeholder="Search champions..."
         value={search}
-        onChange={e => setSearch(e.target.value)}
-        className="mb-6"
+        onChange={(e) => setSearch(e.target.value)}
+        className="mb-6 w-full p-2 border rounded"
       />
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-        {filtered.map(champ => (
-          <Card key={champ.id} className="text-center">
-            <CardContent className="p-2">
-              <img src={champ.image_url} alt={champ.name} className="mx-auto mb-2 rounded" />
-              <div className="text-sm font-medium">{champ.name}</div>
-            </CardContent>
-          </Card>
+        {filtered.map((champ) => (
+          <div key={champ.id} className="text-center border rounded p-2 bg-white shadow">
+            <img
+              src={champ.image_url}
+              alt={champ.name}
+              className="mx-auto mb-2 rounded w-full h-auto"
+            />
+            <div className="text-sm font-medium">{champ.name}</div>
+          </div>
         ))}
       </div>
     </div>
