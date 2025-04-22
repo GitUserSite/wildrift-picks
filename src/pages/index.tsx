@@ -6,8 +6,8 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 export default function HomePage() {
-  const [champions, setChampions] = useState([])
-  const [filtered, setFiltered] = useState([])
+  const [champions, setChampions] = useState<any[]>([])
+  const [filtered, setFiltered] = useState<any[]>([])
   const [search, setSearch] = useState('')
   const [lane, setLane] = useState('all')
 
