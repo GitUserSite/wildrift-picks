@@ -12,6 +12,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
+    console.log('Champions:', champions); // Confirm this prints in logs
+
     const { data, error } = await supabase
       .from('champions')
       .upsert(champions, {
@@ -19,17 +21,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       });
 
     if (error) {
-      console.error('❌ Seeding error:', error);
+      console.error('Supabase error:', error);
       return res.status(500).json({ message: 'Error seeding champions', error });
     }
 
-    console.log(`✅ Seeded ${data?.length || 0} champions.`);
-    return res.status(200).json({
-      message: `Champions seeded successfully`,
-      inserted: data?.length || 0,
-    });
+    return res.status(200).json({ message: 'Champions seeded successfully', data });
   } catch (err) {
-    console.error('❌ Unexpected error:', err);
-    return res.status(500).json({ message: 'Unexpected error occurred', err });
+    console.error('Catch block error:', err);
+    return res.status(500).json({ message: 'Unexpected error', error: err });
   }
 }
