@@ -12,23 +12,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
-    // Convert array to comma-separated string for Supabase
-    const champions = championsRaw.map((champ) => ({
-      ...champ,
-      lanes: (champ.lanes as string[]).join(', ')
+    // Keep lanes as a real array to match text[] in Supabase
+    const formatted = championsRaw.map((c) => ({
+      ...c,
+      lanes: c.lanes as string[],
     }));
 
     const { data, error } = await supabase
       .from('champions')
-      .upsert(champions, {
-        onConflict: ['riot_id']
-      });
+      .upsert(formatted, { onConflict: ['riot_id'] });
 
     if (error) {
       return res.status(500).json({ message: 'Error seeding champions', error });
     }
-
-    return res.status(200).json({ message: 'Champions seeded successfully', data });
+    return res.status(200).json({ message: 'Champions seeded', inserted: data?.length });
   } catch (err) {
     return res.status(500).json({ message: 'Unexpected error', error: err });
   }
