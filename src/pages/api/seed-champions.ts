@@ -12,9 +12,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
+    // Convert array to string for temporary compatibility with Supabase client types
+    const formattedChampions = champions.map((champ) => ({
+      ...champ,
+      lanes: (champ.lanes as string[]).join(', ') // <- This is KEY
+    }))
+
     const { data, error } = await supabase
       .from('champions')
-      .upsert(champions, {
+      .upsert(formattedChampions, {
         onConflict: ['riot_id'],
       })
 
@@ -24,6 +30,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     return res.status(200).json({ message: 'Champions seeded successfully', data })
   } catch (err) {
-    return res.status(500).json({ message: 'Unexpected error occurred', err })
+    return res.status(500).json({ message: 'Unexpected error', err })
   }
 }
