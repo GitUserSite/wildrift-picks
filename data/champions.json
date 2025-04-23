@@ -1,83 +1,132 @@
 [
-  {
-    "name": "Ahri",
-    "riot_id": "Ahri",
-    "lanes": [
-      "mid"
-    ],
-    "released": true
-  },
-  {
-    "name": "Zilean",
-    "riot_id": "Zilean",
-    "lanes": [
-      "support",
-      "mid"
-    ],
-    "released": false
-  },
-  {
-    "name": "Nocturne",
-    "riot_id": "Nocturne",
-    "lanes": [
-      "jungle"
-    ],
-    "released": false
-  },
-  {
-    "name": "Aatrox",
-    "riot_id": "Aatrox",
-    "lanes": [
-      "top"
-    ],
-    "released": true
-  },
-  {
-    "name": "Fiddlesticks",
-    "riot_id": "Fiddlesticks",
-    "lanes": [
-      "jungle"
-    ],
-    "released": true
-  },
-  {
-    "name": "Syndra",
-    "riot_id": "Syndra",
-    "lanes": [
-      "mid"
-    ],
-    "released": true
-  },
-  {
-    "name": "Aurelion Sol",
-    "riot_id": "AurelionSol",
-    "lanes": [
-      "mid"
-    ],
-    "released": true
-  },
-  {
-    "name": "Kindred",
-    "riot_id": "Kindred",
-    "lanes": [
-      "jungle"
-    ],
-    "released": false
-  },
-  {
-    "name": "Skarner",
-    "riot_id": "Skarner",
-    "lanes": [
-      "jungle"
-    ],
-    "released": false
-  },
-  {
-    "name": "Ivern",
-    "riot_id": "Ivern",
-    "lanes": [
-      "jungle"
-    ],
-    "released": false
-  }
+  { "name": "Aatrox",        "riot_id": "Aatrox",        "lanes": [], "released": true },
+  { "name": "Ahri",          "riot_id": "Ahri",          "lanes": [], "released": true },
+  { "name": "Akali",         "riot_id": "Akali",         "lanes": [], "released": true },
+  { "name": "Akshan",        "riot_id": "Akshan",        "lanes": [], "released": true },
+  { "name": "Alistar",       "riot_id": "Alistar",       "lanes": [], "released": true },
+  { "name": "Ambessa",       "riot_id": "Ambessa",       "lanes": [], "released": true },
+  { "name": "Amumu",         "riot_id": "Amumu",         "lanes": [], "released": true },
+  { "name": "Annie",         "riot_id": "Annie",         "lanes": [], "released": true },
+  { "name": "Ashe",          "riot_id": "Ashe",          "lanes": [], "released": true },
+  { "name": "Aurelion Sol",  "riot_id": "Aurelion Sol",  "lanes": [], "released": true },
+  { "name": "Blitzcrank",    "riot_id": "Blitzcrank",    "lanes": [], "released": true },
+  { "name": "Brand",         "riot_id": "Brand",         "lanes": [], "released": true },
+  { "name": "Braum",         "riot_id": "Braum",         "lanes": [], "released": true },
+  { "name": "Caitlyn",       "riot_id": "Caitlyn",       "lanes": [], "released": true },
+  { "name": "Camille",       "riot_id": "Camille",       "lanes": [], "released": true },
+  { "name": "Corki",         "riot_id": "Corki",         "lanes": [], "released": true },
+  { "name": "Darius",        "riot_id": "Darius",        "lanes": [], "released": true },
+  { "name": "Diana",         "riot_id": "Diana",         "lanes": [], "released": true },
+  { "name": "Dr. Mundo",     "riot_id": "Dr. Mundo",     "lanes": [], "released": true },
+  { "name": "Draven",        "riot_id": "Draven",        "lanes": [], "released": true },
+  { "name": "Ekko",          "riot_id": "Ekko",          "lanes": [], "released": true },
+  { "name": "Evelynn",       "riot_id": "Evelynn",       "lanes": [], "released": true },
+  { "name": "Ezreal",        "riot_id": "Ezreal",        "lanes": [], "released": true },
+  { "name": "Fiddlesticks",  "riot_id": "Fiddlesticks",  "lanes": [], "released": true },
+  { "name": "Fiora",         "riot_id": "Fiora",         "lanes": [], "released": true },
+  { "name": "Fizz",          "riot_id": "Fizz",          "lanes": [], "released": true },
+  { "name": "Galio",         "riot_id": "Galio",         "lanes": [], "released": true },
+  { "name": "Garen",         "riot_id": "Garen",         "lanes": [], "released": true },
+  { "name": "Gnar",          "riot_id": "Gnar",          "lanes": [], "released": true },
+  { "name": "Gragas",        "riot_id": "Gragas",        "lanes": [], "released": true },
+  { "name": "Graves",        "riot_id": "Graves",        "lanes": [], "released": true },
+
+  { "name": "Gwen",          "riot_id": "Gwen",          "lanes": [], "released": true },
+  { "name": "Hecarim",       "riot_id": "Hecarim",       "lanes": [], "released": true },
+  { "name": "Heimerdinger",  "riot_id": "Heimerdinger",  "lanes": [], "released": true },
+  { "name": "Irelia",        "riot_id": "Irelia",        "lanes": [], "released": true },
+  { "name": "Janna",         "riot_id": "Janna",         "lanes": [], "released": true },
+  { "name": "Jarvan IV",     "riot_id": "Jarvan IV",     "lanes": [], "released": true },
+  { "name": "Jax",           "riot_id": "Jax",           "lanes": [], "released": true },
+  { "name": "Jayce",         "riot_id": "Jayce",         "lanes": [], "released": true },
+  { "name": "Jhin",          "riot_id": "Jhin",          "lanes": [], "released": true },
+  { "name": "Jinx",          "riot_id": "Jinx",          "lanes": [], "released": true },
+  { "name": "Kai’Sa",        "riot_id": "Kai’Sa",        "lanes": [], "released": true },
+  { "name": "Kalista",       "riot_id": "Kalista",       "lanes": [], "released": true },
+  { "name": "Karma",         "riot_id": "Karma",         "lanes": [], "released": true },
+  { "name": "Kassadin",      "riot_id": "Kassadin",      "lanes": [], "released": true },
+  { "name": "Katarina",      "riot_id": "Katarina",      "lanes": [], "released": true },
+  { "name": "Kayle",         "riot_id": "Kayle",         "lanes": [], "released": true },
+  { "name": "Kayn",          "riot_id": "Kayn",          "lanes": [], "released": true },
+  { "name": "Kennen",        "riot_id": "Kennen",        "lanes": [], "released": true },
+  { "name": "Kha’Zix",       "riot_id": "Kha’Zix",       "lanes": [], "released": true },
+  { "name": "Kindred",       "riot_id": "Kindred",       "lanes": [], "released": true },
+  { "name": "Lee Sin",       "riot_id": "Lee Sin",       "lanes": [], "released": true },
+  { "name": "Leona",         "riot_id": "Leona",         "lanes": [], "released": true },
+  { "name": "Lillia",        "riot_id": "Lillia",        "lanes": [], "released": true },
+  { "name": "Lissandra",     "riot_id": "Lissandra",     "lanes": [], "released": true },
+  { "name": "Lucian",        "riot_id": "Lucian",        "lanes": [], "released": true },
+  { "name": "Lulu",          "riot_id": "Lulu",          "lanes": [], "released": true },
+  { "name": "Lux",           "riot_id": "Lux",           "lanes": [], "released": true },
+  { "name": "Malphite",      "riot_id": "Malphite",      "lanes": [], "released": true },
+  { "name": "Maokai",        "riot_id": "Maokai",        "lanes": [], "released": true },
+  { "name": "Master Yi",     "riot_id": "Master Yi",     "lanes": [], "released": true },
+  { "name": "Milio",         "riot_id": "Milio",         "lanes": [], "released": true },
+  { "name": "Miss Fortune",  "riot_id": "Miss Fortune",  "lanes": [], "released": true },
+
+  { "name": "Mordekaiser",   "riot_id": "Mordekaiser",   "lanes": [], "released": true },
+  { "name": "Morgana",       "riot_id": "Morgana",       "lanes": [], "released": true },
+  { "name": "Nami",          "riot_id": "Nami",          "lanes": [], "released": true },
+  { "name": "Nautilus",      "riot_id": "Nautilus",      "lanes": [], "released": true },
+  { "name": "Nasus",         "riot_id": "Nasus",         "lanes": [], "released": true },
+  { "name": "Nilah",         "riot_id": "Nilah",         "lanes": [], "released": true },
+  { "name": "Nunu",          "riot_id": "Nunu",          "lanes": [], "released": true },
+  { "name": "Nocturne",      "riot_id": "Nocturne",      "lanes": [], "released": false },
+  { "name": "Olaf",          "riot_id": "Olaf",          "lanes": [], "released": true },
+  { "name": "Orianna",       "riot_id": "Orianna",       "lanes": [], "released": true },
+  { "name": "Ornn",          "riot_id": "Ornn",          "lanes": [], "released": true },
+  { "name": "Pantheon",      "riot_id": "Pantheon",      "lanes": [], "released": true },
+  { "name": "Poppy",         "riot_id": "Poppy",         "lanes": [], "released": true },
+  { "name": "Pyke",          "riot_id": "Pyke",          "lanes": [], "released": true },
+  { "name": "Rakan",         "riot_id": "Rakan",         "lanes": [], "released": true },
+  { "name": "Rammus",        "riot_id": "Rammus",        "lanes": [], "released": true },
+  { "name": "Renekton",      "riot_id": "Renekton",      "lanes": [], "released": true },
+  { "name": "Rengar",        "riot_id": "Rengar",        "lanes": [], "released": true },
+  { "name": "Riven",         "riot_id": "Riven",         "lanes": [], "released": true },
+  { "name": "Rumble",        "riot_id": "Rumble",        "lanes": [], "released": true },
+  { "name": "Ryze",          "riot_id": "Ryze",          "lanes": [], "released": true },
+  { "name": "Samira",        "riot_id": "Samira",        "lanes": [], "released": true },
+  { "name": "Senna",         "riot_id": "Senna",         "lanes": [], "released": true },
+  { "name": "Seraphine",     "riot_id": "Seraphine",     "lanes": [], "released": true },
+  { "name": "Sett",          "riot_id": "Sett",          "lanes": [], "released": true },
+  { "name": "Shen",          "riot_id": "Shen",          "lanes": [], "released": true },
+  { "name": "Shyvana",       "riot_id": "Shyvana",       "lanes": [], "released": true },
+  { "name": "Singed",        "riot_id": "Singed",        "lanes": [], "released": true },
+  { "name": "Sion",          "riot_id": "Sion",          "lanes": [], "released": true },
+  { "name": "Sivir",         "riot_id": "Sivir",         "lanes": [], "released": true },
+  { "name": "Sona",          "riot_id": "Sona",          "lanes": [], "released": true },
+  { "name": "Soraka",        "riot_id": "Soraka",        "lanes": [], "released": true },
+
+  { "name": "Swain",         "riot_id": "Swain",         "lanes": [], "released": true },
+  { "name": "Syndra",        "riot_id": "Syndra",        "lanes": [], "released": true },
+  { "name": "Talon",         "riot_id": "Talon",         "lanes": [], "released": true },
+  { "name": "Teemo",         "riot_id": "Teemo",         "lanes": [], "released": true },
+  { "name": "Thresh",        "riot_id": "Thresh",        "lanes": [], "released": true },
+  { "name": "Tristana",      "riot_id": "Tristana",      "lanes": [], "released": true },
+  { "name": "Tryndamere",    "riot_id": "Tryndamere",    "lanes": [], "released": true },
+  { "name": "Twisted Fate",  "riot_id": "Twisted Fate",  "lanes": [], "released": true },
+  { "name": "Twitch",        "riot_id": "Twitch",        "lanes": [], "released": true },
+  { "name": "Urgot",         "riot_id": "Urgot",         "lanes": [], "released": true },
+  { "name": "Varus",         "riot_id": "Varus",         "lanes": [], "released": true },
+  { "name": "Vayne",         "riot_id": "Vayne",         "lanes": [], "released": true },
+  { "name": "Veigar",        "riot_id": "Veigar",        "lanes": [], "released": true },
+  { "name": "Vex",           "riot_id": "Vex",           "lanes": [], "released": true },
+  { "name": "Vi",            "riot_id": "Vi",            "lanes": [], "released": true },
+  { "name": "Viego",         "riot_id": "Viego",         "lanes": [], "released": true },
+  { "name": "Viktor",        "riot_id": "Viktor",        "lanes": [], "released": true },
+  { "name": "Vladimir",      "riot_id": "Vladimir",      "lanes": [], "released": true },
+  { "name": "Volibear",      "riot_id": "Volibear",      "lanes": [], "released": true },
+  { "name": "Warwick",       "riot_id": "Warwick",       "lanes": [], "released": true },
+  { "name": "Wukong",        "riot_id": "Wukong",        "lanes": [], "released": true },
+  { "name": "Xayah",         "riot_id": "Xayah",         "lanes": [], "released": true },
+  { "name": "Xin Zhao",      "riot_id": "Xin Zhao",      "lanes": [], "released": true },
+  { "name": "Yasuo",         "riot_id": "Yasuo",         "lanes": [], "released": true },
+  { "name": "Yone",          "riot_id": "Yone",          "lanes": [], "released": true },
+  { "name": "Yuumi",         "riot_id": "Yuumi",         "lanes": [], "released": true },
+  { "name": "Zed",           "riot_id": "Zed",           "lanes": [], "released": true },
+  { "name": "Zeri",          "riot_id": "Zeri",          "lanes": [], "released": true },
+  { "name": "Ziggs",         "riot_id": "Ziggs",         "lanes": [], "released": true },
+  { "name": "Zoe",           "riot_id": "Zoe",           "lanes": [], "released": true },
+  { "name": "Zyra",          "riot_id": "Zyra",          "lanes": [], "released": true },
+  { "name": "Zilean",        "riot_id": "Zilean",        "lanes": [], "released": false }
 ]
