@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
-    // Convert 'lanes' array to a comma-separated string
+    // Convert array to comma-separated string for Supabase
     const champions = championsRaw.map((champ) => ({
       ...champ,
       lanes: (champ.lanes as string[]).join(', ')
@@ -25,13 +25,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       });
 
     if (error) {
-      console.error('Supabase Error:', error);
-      return res.status(500).json({ message: 'Failed to seed champions', error });
+      return res.status(500).json({ message: 'Error seeding champions', error });
     }
 
-    return res.status(200).json({ message: 'Champions seeded!', data });
+    return res.status(200).json({ message: 'Champions seeded successfully', data });
   } catch (err) {
-    console.error('Unexpected Error:', err);
     return res.status(500).json({ message: 'Unexpected error', error: err });
   }
 }
