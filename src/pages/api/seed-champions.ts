@@ -8,23 +8,28 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Method not allowed' });
+    return res.status(405).json({ message: 'Method Not Allowed' });
   }
 
-  const castedChampions = champions.map((champ) => ({
-    ...champ,
-    lanes: champ.lanes as string[],
-  }));
+  try {
+    // Convert array to comma-separated string for compatibility
+    const formattedChampions = champions.map((champ) => ({
+      ...champ,
+      lanes: (champ.lanes as string[]).join(', ')
+    }));
 
-  const { data, error } = await supabase
-    .from('champions')
-    .upsert(castedChampions, {
-      onConflict: ['riot_id']
-    });
+    const { data, error } = await supabase
+      .from('champions')
+      .upsert(formattedChampions, {
+        onConflict: ['riot_id']
+      });
 
-  if (error) {
-    return res.status(500).json({ message: 'Error seeding champions', error });
+    if (error) {
+      return res.status(500).json({ message: 'Error seeding champions', error });
+    }
+
+    return res.status(200).json({ message: 'Champions seeded successfully', data });
+  } catch (err) {
+    return res.status(500).json({ message: 'Unexpected server error', error: err });
   }
-
-  return res.status(200).json({ message: 'Champions seeded successfully!', data });
 }
